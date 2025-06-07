@@ -13,7 +13,7 @@ enum way {
     //% block="停止"
     停止 = 0
 }
-
+//% weight=100 color=#ffa500 icon="R"
 namespace こうかにんじゃロボコン{
     //% block
     export function 進む方向(w: way,speed: number): void {
