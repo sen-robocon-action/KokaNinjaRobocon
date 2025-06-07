@@ -16,7 +16,7 @@ enum way {
 
 namespace こうかにんじゃロボコン{
     //% block
-    export function 進む方向(speed: number,w: way): void {
+    export function 進む方向(w: way,speed: number): void {
         if(w === 1) {
             servos.P1.run(-speed)
             servos.P2.run(speed)   
@@ -32,6 +32,10 @@ namespace こうかにんじゃロボコン{
         if(w === -2) {
             servos.P1.run(-speed)
             servos.P2.stop()   
+        }
+        if(w === 0) {
+            servos.P1.stop()
+            servos.P2.stop()
         }
     }
 }
