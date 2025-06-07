@@ -34,9 +34,4 @@ namespace こうかにんじゃロボコン{
             servos.P2.stop()   
         }
     }
-
-    //% block
-    export function neopixel準備()　{
-         let strip = neopixel.create(DigitalPin.P0, 5, NeoPixelMode.RGB)
-    }
 }
