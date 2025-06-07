@@ -36,7 +36,7 @@ namespace こうかにんじゃロボコン{
     }
 
     //% block
-    export function fib(value: number): number {
-        return value <= 1 ? value : fib(value -1) + fib(value - 2);
+    export function neopixel準備()　{
+         let strip = neopixel.create(DigitalPin.P0, 5, NeoPixelMode.RGB)
     }
 }
